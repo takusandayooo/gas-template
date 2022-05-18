@@ -1,0 +1,16 @@
+{
+  "include": [
+    "src"
+  ],
+  "compilerOptions": {
+    "outDir": "build",
+    "target": "es5",
+    "lib": [
+      "esNext",
+    ],
+    "strict": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+  }
+}
