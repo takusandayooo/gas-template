@@ -6,7 +6,7 @@ const mode =
 const devtool = "inline-source-map";
 const entry = path.resolve("src", "index.ts");
 const outPath = path.resolve("build");
-const outFileName = "backend.js";
+const outFileName = "app.js";
 const output = {
   path: outPath,
   filename: outFileName,
