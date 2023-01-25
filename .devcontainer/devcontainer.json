@@ -22,8 +22,7 @@
 				"esbenp.prettier-vscode",
 				"eamodio.gitlens",
 				"mhutchie.git-graph",
-				"GitHub.vscode-pull-request-github",
-				"oderwat.indent-rainbow"
+				"GitHub.vscode-pull-request-github"
 			]
 		}
 	}
