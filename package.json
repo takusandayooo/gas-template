@@ -21,6 +21,7 @@
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.32.0",
+    "eslint-plugin-import": "^2.27.5",
     "gas-webpack-plugin": "^2.0.0",
     "ts-loader": "^9.4.2",
     "tslib": "^2.4.1",
