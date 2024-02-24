@@ -19,7 +19,7 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "ignorePatterns": [
-    "webpack.*.js"
+    "build.js"
   ],
   "rules": {
     "sort-imports": [
