@@ -16,12 +16,15 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "prettier" //  Make sure to put it last, so it gets the chance to override other configs.
   ],
   "ignorePatterns": [
     "build.js"
   ],
   "rules": {
+    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/no-import-type-side-effects": "error",
     "sort-imports": [
       "error",
       {
