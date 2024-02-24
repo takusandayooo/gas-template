@@ -5,7 +5,7 @@
   "main": "build/backend.js",
   "private": true,
   "engines": {
-    "node": ">=14",
+    "node": ">=18",
     "yarn": ">=1.22"
   },
   "scripts": {
@@ -17,13 +17,13 @@
   "dependencies": {},
   "devDependencies": {
     "@google/clasp": "^2.4.2",
-    "@types/google-apps-script": "^1.0.57",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@types/google-apps-script": "^1.0.82",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
     "esbuild": "^0.20.1",
     "esbuild-gas-plugin": "^0.8.0",
-    "eslint": "^8.32.0",
-    "eslint-plugin-import": "^2.27.5",
-    "typescript": "^4.9.4"
+    "eslint": "^8.57.0",
+    "eslint-plugin-import": "^2.29.1",
+    "typescript": "^5.3.3"
   }
 }
