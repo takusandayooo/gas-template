@@ -36,15 +36,17 @@ yarn clasp login
 
 ```
 yarn clasp create --title={projectName}
-mv build/.clasp.json ./
+mv build/.clasp.json .clasp.prod.json
 ```
 
 2. build/appsscript.jsonをプロジェクトにあわせて修正する
   - 特に `oauthScopes`
 
+3. 必要に応じてdev環境を用意する
+
 
 ### GoogleDrive上にある既存のGASプロジェクトを利用する場合
 
-1. プロジェクトのrootDirに.clasp.jsonを手動で作成する
+1. プロジェクトのrootDirに.clasp.prod.json（必要に応じて.clasp.dev.json）を手動で作成する
 1. build/appsscript.jsonをプロジェクトにあわせて修正する
   - 特に `oauthScopes`
