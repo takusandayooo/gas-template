@@ -15,11 +15,15 @@
     "format": "prettier --write src/**/*.ts",
     "typecheck": "tsc --noEmit",
     "build": "node build.js",
+    "prepare": "husky",
     "buildpush:prod": "yarn run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.prod.json clasp push --force",
     "buildpush:dev": " yarn run build && cp appsscript.json build/appsscript.json && clasp_config_project=.clasp.dev.json clasp push --force",
     "postinstall": "mkdir -p build && cp appsscript.json build/appsscript.json"
   },
-  "dependencies": {},
+  "dependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2"
+  },
   "devDependencies": {
     "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.82",
@@ -30,7 +34,13 @@
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "prettier": "^3.2.5",
+    "prettier": "3.2.5",
     "typescript": "^5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
   }
 }
